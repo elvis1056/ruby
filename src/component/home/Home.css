@@ -1,0 +1,287 @@
+
+.navbar-toggler-background {
+  background-color: #d90845;
+  padding: 1rem 1.2rem;
+  border-radius: 0rem;
+  border: none;
+  margin-right: -1rem;
+}
+
+.nav-link {
+  color: #777;
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.icon-bar {
+  width: 2.1875rem;
+  height: 0.125rem;
+  margin: 0.4375rem 0rem;
+  border-radius: 0.0625rem;
+  background-color: #fff;
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
+}
+
+.course-recommend-a {
+  color: #212529;
+}
+
+.course-recommend-a:hover {
+  color: #212529;
+}
+
+.course-recommend-section h3:first-child::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  left: 50%;
+  background-color: #d90845;
+  bottom: 0;
+  margin: 0 0 0 -40px;
+}
+
+.all-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 68px;
+}
+
+.course-recommend-person-section h3:first-child::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  left: 50%;
+  background-color: #d90845;
+  bottom: 0;
+  margin: 0 0 0 -40px;
+}
+
+.speaker-wrap {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  color: #666;
+  height: 100%;
+  background-color: #fff;
+}
+
+.speaker-cover {
+  width: 100%;
+}
+
+.speaker-cover > img {
+  max-width: 100%;
+}
+
+.speaker-apply {
+  display: inline-block;
+  line-height: 12px;
+  font-size: 75%;
+  font-weight: 700;
+  padding: 5px 7px;
+  color: #fff;
+  background-color: red;
+  border-radius: .25rem;
+}
+
+.speaker-title {
+  font-size: 18px;
+  font-weight: 700!important;
+}
+
+.speaker-class-time {
+  font-size: 85%;
+  width: 70px;
+  line-height: 2;
+}
+
+.speaker-time {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #666;
+  background-color: #E6E6E6;
+  font-size: 90%; 
+  padding: 7px 10px;
+}
+
+.speaker-border-top {
+  border-top: 1px solid #ddd;
+}
+
+.showcase-recommend-a {
+  color: #666;
+}
+
+.showcase-recommend-a:hover {
+  color: #d90845;
+}
+
+.showcase-section h3:first-child::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  left: 50%;
+  background-color: #d90845;
+  bottom: 0;
+  margin: 0 0 0 -40px;
+}
+
+.showcase-item {
+  border: 1px solid #ddd;
+  height: 100%;
+}
+
+.showcase-cover {
+  width: 100%;
+}
+
+.showcase-cover > img {
+  max-width: 100%;
+}
+
+.know-us-text {
+  line-height: 38px;
+  font-size: 18px;
+}
+
+.footer-bg {
+  background-color: #f7f7f7;
+}
+
+.footer-pd {
+  padding: 3.125rem 0rem;
+}
+
+.footer-cover {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.footer-cover:hover {
+  filter: grayscale(0%);
+}
+
+.footer-cover > img {
+  max-width: 100%;
+}
+
+.footer-cover-cakeresume {
+  width: 100%;
+}
+
+.footer-cover-cakeresume:hover {
+  text-decoration: none;
+}
+
+.footer-cover-cakeresume > img {
+  max-width: 180px;
+  margin-bottom: 10px;
+  padding-right: 6px;
+}
+
+.footer-cover-cakeresume > span {
+  font-size: 21px;
+  color: #6c757d!important;
+}
+
+.footer-nav-items > li {
+  margin: auto;
+}
+
+.footer-nav-items > li > a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-nav-items > li > a:hover {
+  color: #d90845;
+}
+
+.contact-info-tel {
+  font-size: 24px;
+}
+
+.contact-icon {
+  border: 0.125rem solid #666;
+  border-radius: 50%;
+  font-size: 1.375rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0.625rem;
+  margin-right: 0.625rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-icon:hover {
+  border: 0.125rem solid #d90845;
+  color: #d90845;
+}
+
+.contact-mail-address {
+  color: #555;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.contact-mail-address > p > a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-mail-address > p > a:hover {
+  color: #d90845;
+}
+
+.btn-red {
+  background-color: #d90845!important;
+  color: #fff!important;
+}
+
+.btn-font-padding {
+  padding: 15px 50px;
+  font-size: 18px;
+}
+
+.rl-padding {
+  padding: 0 15px;
+}
+
+.txt-red {
+  color: #d90845;
+}
+
+.txt-red:hover {
+  text-decoration: none;
+  color: #d90845;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .nav-link {
+    padding-right: 0.4375rem;
+    padding-left: 0.4375rem;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-link {
+    position: relative;
+    padding: 0.9375rem;
+    line-height: 1.25rem;
+    font-size: 90%;
+  }
+}
