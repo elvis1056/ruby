@@ -13,6 +13,7 @@ import show3 from './shopmatic-92ff9dcf.jpg';
 import footimg1 from './press-img-3161693e.png';
 import footimg2 from './cakeresume-8938f367.png'
 import './Home.css';
+import Carousel from './carousel';
 
 class Home extends Component {
   // constructor() {
@@ -24,14 +25,14 @@ class Home extends Component {
         <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top" style={{ "background-color": "#fff" }}>
           {/* navbar-brand logo-link */}
           <div className="container-fluid pl-3 pr-3" style={{ "height": "4.3125rem" }}>
-            <a href="/" class="">
+            <a href="/" className="">
               <img src={logo} style={{ "max-width": "7.5rem" }} alt="網頁設計前後端課程 | 五倍紅寶石" />
             </a>
 
-            <button class="navbar-toggler" style={{ "background-color": "#d90845" }} type="button" data-toggle="collapse" data-target="#mobile-dropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <div class="icon-bar"></div>
-              <div class="icon-bar"></div>
-              <div class="icon-bar"></div>
+            <button className="navbar-toggler" style={{ "background-color": "#d90845" }} type="button" data-toggle="collapse" data-target="#mobile-dropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <div className="icon-bar"></div>
+              <div className="icon-bar"></div>
+              <div className="icon-bar"></div>
             </button>
 
             <ul class="collapse navbar-collapse flex-row justify-content-end mb-0" id="mobile-dropdown">
@@ -100,7 +101,7 @@ class Home extends Component {
 
 
           <div className="about-section"></div>
-
+          <Carousel />
 
           <div className="course-recommend-section pb-4">
             <div className="container">
@@ -110,7 +111,7 @@ class Home extends Component {
                   <span></span>
                 </h3>
                 <div className="d-flex flex-wrap">
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img1} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
                       <h3 class="pt-3">網頁設計<br />前後端課程教學</h3>
@@ -118,7 +119,7 @@ class Home extends Component {
                       </p>
                     </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img2} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
                       <h3 class="pt-3">頂尖技術<br />網頁製作、專案開發</h3>
@@ -126,7 +127,7 @@ class Home extends Component {
                       </p>
                     </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img3} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
                       <h3 class="pt-3">資訊軟體開發<br />技術顧問</h3>
@@ -134,7 +135,7 @@ class Home extends Component {
                       </p>
                     </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
+                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img4} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
                       <h3 class="pt-3">前後端工程師<br />社群經營</h3>
@@ -403,7 +404,7 @@ class Home extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-8 col-xl-9 mt-3">
+                    <div className="col-12 col-md-8 col-lg-9 mt-3">
                       <div class="contact-mail-address">
                         <p>有任何問題？</p>
                         <p><a href="mailto:hi@5xruby.tw">hi@5xruby.tw</a></p>
