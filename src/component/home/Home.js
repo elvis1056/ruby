@@ -22,24 +22,24 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top" style={{ "background-color": "#fff" }}>
+        <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top" style={{ "backgroundColor": "#fff" }}>
           {/* navbar-brand logo-link */}
           <div className="container-fluid pl-3 pr-3" style={{ "height": "4.3125rem" }}>
             <a href="/" className="">
-              <img src={logo} style={{ "max-width": "7.5rem" }} alt="網頁設計前後端課程 | 五倍紅寶石" />
+              <img src={logo} style={{ "maxWidth": "7.5rem" }} alt="網頁設計前後端課程 | 五倍紅寶石" />
             </a>
 
-            <button className="navbar-toggler" style={{ "background-color": "#d90845" }} type="button" data-toggle="collapse" data-target="#mobile-dropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" style={{ "backgroundColor": "#d90845" }} type="button" data-toggle="collapse" data-target="#mobile-dropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <div className="icon-bar"></div>
               <div className="icon-bar"></div>
               <div className="icon-bar"></div>
             </button>
 
-            <ul class="collapse navbar-collapse flex-row justify-content-end mb-0" id="mobile-dropdown">
+            <ul className="collapse navbar-collapse flex-row justify-content-end mb-0" id="mobile-dropdown">
               <li className="text-center">
                 <a className="nav-link" href="https://iamcoding.tw/" target="_blank" rel="noreferrer noopener">
                   <span style={{ fontSize: "1em" }}>
-                    <i class="far fa-gem"></i>
+                    <i className="far fa-gem"></i>
                   </span>
                   線上課程
               </a>
@@ -47,7 +47,7 @@ class Home extends Component {
               <li className="text-center">
                 <a className="nav-link" href="https://astro.5xruby.tw/" target="_blank" rel="noreferrer noopener">
                   <span style={{ fontSize: "1em" }}>
-                    <i class="far fa-gem"></i>
+                    <i className="far fa-gem"></i>
                   </span>
                   ASTRO Camp
               </a>
@@ -55,7 +55,7 @@ class Home extends Component {
               <li className="text-center">
                 <a className="nav-link" href="https://5xruby.tw/fullstack-landing/" target="_blank" rel="noreferrer noopener">
                   <span style={{ fontSize: "1em" }}>
-                    <i class="far fa-gem"></i>
+                    <i className="far fa-gem"></i>
                   </span>
                   全方位課程
               </a>
@@ -111,35 +111,35 @@ class Home extends Component {
                   <span></span>
                 </h3>
                 <div className="d-flex flex-wrap">
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                  <div className="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img1} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
-                      <h3 class="pt-3">網頁設計<br />前後端課程教學</h3>
-                      <p class="pt-3 pb-3 text-center">帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！
+                      <h3 className="pt-3">網頁設計<br />前後端課程教學</h3>
+                      <p className="pt-3 pb-3 text-center">帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！
                       </p>
                     </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                  <div className="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img2} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
-                      <h3 class="pt-3">頂尖技術<br />網頁製作、專案開發</h3>
-                      <p class="pt-3 pb-3 text-center">到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。
+                      <h3 className="pt-3">頂尖技術<br />網頁製作、專案開發</h3>
+                      <p className="pt-3 pb-3 text-center">到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。
                       </p>
                     </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                  <div className="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img3} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
-                      <h3 class="pt-3">資訊軟體開發<br />技術顧問</h3>
-                      <p class="pt-3 pb-3 text-center">協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！
+                      <h3 className="pt-3">資訊軟體開發<br />技術顧問</h3>
+                      <p className="pt-3 pb-3 text-center">協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！
                       </p>
                     </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+                  <div className="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
                     <a href="/talks" className="course-recommend-a text-decoration-none">
                       <img src={img4} alt="網頁設計前後端課程教學 | 五倍紅寶石" />
-                      <h3 class="pt-3">前後端工程師<br />社群經營</h3>
-                      <p class="pt-3 pb-3 text-center">Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。
+                      <h3 className="pt-3">前後端工程師<br />社群經營</h3>
+                      <p className="pt-3 pb-3 text-center">Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。
                       </p>
                     </a>
                   </div>
@@ -160,20 +160,20 @@ class Home extends Component {
 
                   <div className="d-flex flex-wrap" style={{ "margin": "0 -15px" }}>
                     <div className="col-12 col-lg-4 col-md-6 col-sm-12 mb-4 mb-sm-5">
-                      <div className>
+                      <div>
                         <a href="/talks/vue-js" className="text-decoration-none">
                           <div className="speaker-wrap">
                             <div className="speaker-cover">
                               <img src={jpg1} alt="Vue.js 與 Vuex 前端開發實戰課程 - 假日班" />
                             </div>
-                            <div class="rl-padding py-2">
+                            <div className="rl-padding py-2">
                               <span className="speaker-apply">開放報名中</span>
-                              <h4 class="speaker-title mt-2 mb-2 mb-sm-4">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h4>
+                              <h4 className="speaker-title mt-2 mb-2 mb-sm-4">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h4>
                               <small>講師：許國政 (Kuro Hsu)</small>
-                              <div class="d-flex mt-2 pt-sm-3 pt-2 pt-sm-3 speaker-border-top">
+                              <div className="d-flex mt-2 pt-sm-3 pt-2 pt-sm-3 speaker-border-top">
                                 <small className="speaker-class-time">開課時間</small>
-                                <div class="lecture-time-item">
-                                  <span class="speaker-time mb-1">3 月｜假日班</span>
+                                <div className="lecture-time-item">
+                                  <span className="speaker-time mb-1">3 月｜假日班</span>
                                 </div>
                               </div>
                             </div>
@@ -183,20 +183,20 @@ class Home extends Component {
                     </div>
 
                     <div className="col-12 col-lg-4 col-md-6 col-sm-12 mb-4 mb-sm-5">
-                      <div className>
+                      <div>
                         <a href="/talks/vue-js" className="text-decoration-none">
                           <div className="speaker-wrap">
                             <div className="speaker-cover">
                               <img src={jpg2} alt="Vue.js 與 Vuex 前端開發實戰課程 - 假日班" />
                             </div>
-                            <div class="rl-padding py-2">
+                            <div className="rl-padding py-2">
                               <span className="speaker-apply">開放報名中</span>
-                              <h4 class="speaker-title mt-2 mb-2 mb-sm-4">ReactJS 與 Webpack 全攻略入門班 - 假日班</h4>
+                              <h4 className="speaker-title mt-2 mb-2 mb-sm-4">ReactJS 與 Webpack 全攻略入門班 - 假日班</h4>
                               <small>講師：廖珀均 / 奶綠茶 (Milkmidi)</small>
-                              <div class="d-flex mt-2 pt-sm-3 pt-2 pt-sm-3 speaker-border-top">
+                              <div className="d-flex mt-2 pt-sm-3 pt-2 pt-sm-3 speaker-border-top">
                                 <small className="speaker-class-time">開課時間</small>
-                                <div class="lecture-time-item">
-                                  <span class="speaker-time mb-1">4 月｜假日班</span>
+                                <div className="lecture-time-item">
+                                  <span className="speaker-time mb-1">4 月｜假日班</span>
                                 </div>
                               </div>
                             </div>
@@ -206,20 +206,20 @@ class Home extends Component {
                     </div>
 
                     <div className="col-12 col-lg-4 col-md-6 col-sm-12 mb-4 mb-sm-5">
-                      <div className>
+                      <div>
                         <a href="/talks/vue-js" className="text-decoration-none">
                           <div className="speaker-wrap">
                             <div className="speaker-cover">
                               <img src={jpg3} alt="Vue.js 與 Vuex 前端開發實戰課程 - 假日班" />
                             </div>
-                            <div class="rl-padding py-2">
+                            <div className="rl-padding py-2">
                               <span className="speaker-apply">開放報名中</span>
-                              <h4 class="speaker-title mt-2 mb-2 mb-sm-4">Google Tag Manager 數據追蹤碼課程 - 假日班</h4>
+                              <h4 className="speaker-title mt-2 mb-2 mb-sm-4">Google Tag Manager 數據追蹤碼課程 - 假日班</h4>
                               <small>講師：康晉嵐 (Jason Kang)</small>
-                              <div class="d-flex mt-2 pt-sm-3 pt-2 pt-sm-3 speaker-border-top">
+                              <div className="d-flex mt-2 pt-sm-3 pt-2 pt-sm-3 speaker-border-top">
                                 <small className="speaker-class-time">開課時間</small>
-                                <div class="lecture-time-item">
-                                  <span class="speaker-time mb-1">5 月｜假日班</span>
+                                <div className="lecture-time-item">
+                                  <span className="speaker-time mb-1">5 月｜假日班</span>
                                 </div>
                               </div>
                             </div>
@@ -230,7 +230,7 @@ class Home extends Component {
                   </div>
 
                   <div className="col-12 text-center">
-                    <a class="btn btn-font-padding btn-red mt-4" href="/talks">看更多網頁課程</a>
+                    <a className="btn btn-font-padding btn-red mt-4" href="/talks">看更多網頁課程</a>
                   </div>
 
                 </div>
@@ -309,8 +309,8 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-right mt-3">
-                <a class="txt-red" href="./showcases">...更多案例</a>
+              <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-right mt-3">
+                <a className="txt-red" href="./showcases">...更多案例</a>
               </div>
             </div>
           </div>
@@ -387,25 +387,25 @@ class Home extends Component {
                   </div>
                   <div className="d-flex col-12">
                     <div className="col-12 col-md-4 col-xl-3 mt-2">
-                      <div class="contact-info">
-                        <div class="text-danger contact-info-tel">02-2331-5247</div>
+                      <div className="contact-info">
+                        <div className="text-danger contact-info-tel">02-2331-5247</div>
                         <small>Mon - Fri / 09:30 - 22:00</small>
                         <br />
                         <div>
                           <a href="https://www.facebook.com/5xruby" rel="noopener noreferrer" target="_blank">
-                            <i class="fab fa-facebook-f contact-icon"></i>
+                            <i className="fab fa-facebook-f contact-icon"></i>
                           </a>
                           <a href="https://twitter.com/5xruby" rel="noopener noreferrer" target="_blank">
-                            <i class="fab fa-twitter contact-icon" aria-hidden="true"></i>
+                            <i className="fab fa-twitter contact-icon" aria-hidden="true"></i>
                           </a>
                           <a href="https://github.com/5xruby" rel="noopener noreferrer" target="_blank">
-                            <i class="fab fa-github contact-icon" aria-hidden="true"></i>
+                            <i className="fab fa-github contact-icon" aria-hidden="true"></i>
                           </a>
                         </div>
                       </div>
                     </div>
                     <div className="col-12 col-md-8 col-lg-9 mt-3">
-                      <div class="contact-mail-address">
+                      <div className="contact-mail-address">
                         <p>有任何問題？</p>
                         <p><a href="mailto:hi@5xruby.tw">hi@5xruby.tw</a></p>
                         <p>地址：<a href="https://goo.gl/lz5v93" rel="noopener noreferrer" target="_blank" >10046 台北市中正區衡陽路 7 號 5 樓</a></p>
