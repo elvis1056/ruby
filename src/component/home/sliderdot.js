@@ -15,13 +15,10 @@ class SliderDot extends Component {
         <span key={i} className="slider-dot" onClick={(e)=>this.handleSliderDotClick(i,e)}></span>
       )
     }
-    console.log(this.props)
+
     return (
       <div className="slider-dots-wrap">
         {dotArray}
-        {/* <span className="slider-dot"></span>
-        <span className="slider-dot"></span>
-        <span className="slider-dot"></span> */}
       </div>
     )
   }

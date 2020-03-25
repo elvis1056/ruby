@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import banner1 from './banner1.jpg';
-import banner2 from './banner2.jpg';
-import banner3 from './banner3.jpg';
-import banner4 from './banner4.jpg';
+import banner1 from './picture/banner/banner1.jpg';
+import banner2 from './picture/banner/banner2.jpg';
+import banner3 from './picture/banner/banner3.jpg';
+import banner4 from './picture/banner/banner4.jpg';
+import './sliderBanner.css';
 import SliderDot from './sliderdot';
 
 class Slider extends Component {
@@ -31,6 +32,10 @@ class Slider extends Component {
     },this.props.delay)
   }
 
+  pausePlay = () => {
+    clearInterval(this.autoPlayFlag)
+  }
+
   componentDidMount() {
     this.autoplay()
   }
@@ -45,7 +50,7 @@ class Slider extends Component {
     }
 
     return (
-      <div className="carousel-container" >
+      <div className="carousel-container" onMouseOver={this.pausePlay} onMouseOut={this.autoplay} >
         <ul style={sliderstyle}>
           <li className="slider-item">
             <img 

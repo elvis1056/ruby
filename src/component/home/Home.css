@@ -49,7 +49,7 @@
   margin-top: 68px;
 }
 
-.course-recommend-person-section h3:first-child::before {
+.course-recommend-lecture-section h3:first-child::before {
   content: '';
   position: absolute;
   height: 3px;
@@ -116,6 +116,17 @@
 
 .speaker-border-top {
   border-top: 1px solid #ddd;
+}
+
+.course-recommend-person-section h3:first-child::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  left: 50%;
+  background-color: #d90845;
+  bottom: 0;
+  margin: 0 0 0 -40px;
 }
 
 .showcase-recommend-a {
@@ -267,6 +278,10 @@
 .txt-red:hover {
   text-decoration: none;
   color: #d90845;
+}
+
+.light-grey-background {
+  background-color: #f7f7f7;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {

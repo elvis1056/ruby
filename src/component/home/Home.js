@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo-c473f739.png';
-import img1 from './feature-list-img1-0d20ab19.png';
-import img2 from './feature-list-img2-26e4ca80.png';
-import img3 from './feature-list-img3-d0a4089e.png';
-import img4 from './feature-list-img4-13321bf0.png';
-import jpg1 from './vue-js-61eaa1c7.jpg';
-import jpg2 from './react-js-c77f3549.jpg';
-import jpg3 from './gtm-48e34654.jpg';
-import show1 from './space_next_door-4dfdfeb6.png';
-import show2 from './shopmatic_go-f7b86d46.png';
-import show3 from './shopmatic-92ff9dcf.jpg';
-import footimg1 from './press-img-3161693e.png';
-import footimg2 from './cakeresume-8938f367.png'
+import img1 from './picture/feature-list/feature-list-img1-0d20ab19.png';
+import img2 from './picture/feature-list/feature-list-img2-26e4ca80.png';
+import img3 from './picture/feature-list/feature-list-img3-d0a4089e.png';
+import img4 from './picture/feature-list/feature-list-img4-13321bf0.png';
+import jpg1 from './picture/course-recommend-person/vue-js-61eaa1c7.jpg';
+import jpg2 from './picture/course-recommend-person/react-js-c77f3549.jpg';
+import jpg3 from './picture/course-recommend-person/gtm-48e34654.jpg';
+import show1 from './picture/showcase/space_next_door-4dfdfeb6.png';
+import show2 from './picture/showcase/shopmatic_go-f7b86d46.png';
+import show3 from './picture/showcase/shopmatic-92ff9dcf.jpg';
+import footimg1 from './picture/footer/press-img-3161693e.png';
+import footimg2 from './picture/footer/cakeresume-8938f367.png'
 import './Home.css';
 import Carousel from './carousel';
 
 class Home extends Component {
-  // constructor() {
-  //   super()
-  // }
   render() {
     return (
       <div>
@@ -103,7 +100,7 @@ class Home extends Component {
           <div className="about-section"></div>
           <Carousel />
 
-          <div className="course-recommend-section pb-4">
+          <div className="course-recommend-section pb-4 light-grey-background">
             <div className="container">
               <div className="row flex-column">
                 <h3 className="mb-5 mt-5 pb-4 text-center position-relative">
@@ -149,7 +146,7 @@ class Home extends Component {
           </div>
 
 
-          <div className="course-recommend-person-section">
+          <div className="course-recommend-lecture-section">
             <div className="container">
               <div className="row flex-column">
                 <div className="center-block col-12">
@@ -241,7 +238,7 @@ class Home extends Component {
 
 
 
-          <div className="know-us-section pb-4">
+          <div className="course-recommend-person-section pb-4 light-grey-background">
             <div className="container">
               <div className="row flex-column">
                 <h3 className="mb-5 mt-5 pb-4 text-center position-relative">
