@@ -21,7 +21,7 @@ class Contacts extends Component {
   }
 
   render() {
-    console.log(this.state)
+    let { username, email, phone, selection, message } = this.state
     return (
       <div>
         <div className="all-content light-red-background">
@@ -104,12 +104,24 @@ class Contacts extends Component {
                 </div>
 
                 <div className="form-group">
-                  <textarea rows="5" className="form-control" placeholder="留下你的訊息" name="message" id="contact_message" required=""></textarea>
+                  <textarea rows="5" className="form-control" onChange={this.handleChange} placeholder="留下你的訊息" name="message" id="contact_message" required=""></textarea>
                 </div>
 
-                <input type="submit" name="submit" value="送出" className="btn btn-red btn-block" data-disable-with="送出"></input>
+                <input type="button" name="submit" value="送出" className="btn btn-red btn-block" data-toggle="modal" data-target=".bd-example-modal-lg" data-disable-with="送出"></input>
 
                 </form>
+
+                <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div className="modal-dialog modal-lg">
+                    <div className="modal-content text-center">
+                      <div>{username}</div>
+                      <div>{email}</div>
+                      <div>{phone}</div>
+                      <div>{selection}</div>
+                      <div>{message}</div>
+                    </div>
+                  </div>
+                </div>
 
               </div>
 
