@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo-c473f739.png';
 import img1 from './picture/feature-list/feature-list-img1-0d20ab19.png';
 import img2 from './picture/feature-list/feature-list-img2-26e4ca80.png';
 import img3 from './picture/feature-list/feature-list-img3-d0a4089e.png';
@@ -10,88 +9,14 @@ import jpg3 from './picture/course-recommend-person/gtm-48e34654.jpg';
 import show1 from './picture/showcase/space_next_door-4dfdfeb6.png';
 import show2 from './picture/showcase/shopmatic_go-f7b86d46.png';
 import show3 from './picture/showcase/shopmatic-92ff9dcf.jpg';
-import footimg1 from './picture/footer/press-img-3161693e.png';
-import footimg2 from './picture/footer/cakeresume-8938f367.png'
 import './Home.css';
 import Carousel from './carousel';
+import SliderRecommendPerson from './SliderRecommendPerson';
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top" style={{ "backgroundColor": "#fff" }}>
-          {/* navbar-brand logo-link */}
-          <div className="container-fluid pl-3 pr-3" style={{ "height": "4.3125rem" }}>
-            <a href="/" className="">
-              <img src={logo} style={{ "maxWidth": "7.5rem" }} alt="網頁設計前後端課程 | 五倍紅寶石" />
-            </a>
-
-            <button className="navbar-toggler" style={{ "backgroundColor": "#d90845" }} type="button" data-toggle="collapse" data-target="#mobile-dropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <div className="icon-bar"></div>
-              <div className="icon-bar"></div>
-              <div className="icon-bar"></div>
-            </button>
-
-            <ul className="collapse navbar-collapse flex-row justify-content-end mb-0" id="mobile-dropdown">
-              <li className="text-center">
-                <a className="nav-link" href="https://iamcoding.tw/" target="_blank" rel="noreferrer noopener">
-                  <span style={{ fontSize: "1em" }}>
-                    <i className="far fa-gem"></i>
-                  </span>
-                  線上課程
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://astro.5xruby.tw/" target="_blank" rel="noreferrer noopener">
-                  <span style={{ fontSize: "1em" }}>
-                    <i className="far fa-gem"></i>
-                  </span>
-                  ASTRO Camp
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://5xruby.tw/fullstack-landing/" target="_blank" rel="noreferrer noopener">
-                  <span style={{ fontSize: "1em" }}>
-                    <i className="far fa-gem"></i>
-                  </span>
-                  全方位課程
-              </a>
-              </li>
-
-
-              <li className="text-center">
-                <a className="nav-link" href="https://5xruby.tw/talks/" target="_blank" rel="noreferrer noopener">
-                  短期課程
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://dev.5xruby.tw/" target="_blank" rel="noreferrer noopener">
-                  專案開發
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://5xruby.tw/training/" target="_blank" rel="noreferrer noopener">
-                  企業代訓
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://5xruby.tw/space/" target="_blank" rel="noreferrer noopener">
-                  空間租借
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://5xruby.tw/posts/" target="_blank" rel="noreferrer noopener">
-                  專欄文章
-              </a>
-              </li>
-              <li className="text-center">
-                <a className="nav-link" href="https://5xruby.tw/news/" target="_blank" rel="noreferrer noopener">
-                  最新消息
-              </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
         {/* <div className="header">Header</div> */}
 
         <div className="all-content">
@@ -226,7 +151,7 @@ class Home extends Component {
                     </div>
                   </div>
 
-                  <div className="col-12 text-center">
+                  <div className="col-12 text-center pb-5">
                     <a className="btn btn-font-padding btn-red mt-4" href="/talks">看更多網頁課程</a>
                   </div>
 
@@ -239,13 +164,14 @@ class Home extends Component {
 
 
           <div className="course-recommend-person-section pb-4 light-grey-background">
-            <div className="container">
-              <div className="row flex-column">
+            <div className="">
+              <div className="pt-1 flex-column">
                 <h3 className="mb-5 mt-5 pb-4 text-center position-relative">
                   網頁課程推薦
                   <span></span>
                 </h3>
               </div>
+              <SliderRecommendPerson />
             </div>
           </div>
 
@@ -336,93 +262,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
-        <footer className="footer-bg footer-pd pd-5">
-          <div className="container">
-            <div className="row d-flex">
-              <div className="col-12 col-md-3">
-                <a className="footer-cover" href="https://5xruby.tw/press/">
-                  <img className="mb-3" src={footimg1} alt="媒體報導" />
-                </a>
-                <a className="footer-cover-cakeresume" href="https://www.cakeresume.com/jobs">
-                  <img src={footimg2} alt="CakeResume 找工作"></img>
-                  <span>找工作</span>
-                </a>
-              </div>
-              <div className="col-12 col-md-9 mt-2">
-                <div className="row">
-                  <div className="col-12 align-items-center">
-                    <ul className="d-flex footer-nav-items">
-                      <li>
-                        <a href="https://5xruby.tw/about/">關於五倍紅寶石</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/news/categories/press/">媒體報導</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/members/">團隊成員</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/contacts/">聯絡詢價</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/fag/">常見問題</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/jobs/">工作機會</a>
-                      </li>
-                      <li>
-                        <a href="https://github.com/5xRuby" target="_blank" rel="noopener noreferrer">開源專案</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/privacy-policy/">隱私權條款</a>
-                      </li>
-                      <li>
-                        <a href="https://5xruby.tw/terms-of-service/">服務條款</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="d-flex col-12">
-                    <div className="col-12 col-md-4 col-xl-3 mt-2">
-                      <div className="contact-info">
-                        <div className="text-danger contact-info-tel">02-2331-5247</div>
-                        <small>Mon - Fri / 09:30 - 22:00</small>
-                        <br />
-                        <div>
-                          <a href="https://www.facebook.com/5xruby" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-facebook-f contact-icon"></i>
-                          </a>
-                          <a href="https://twitter.com/5xruby" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-twitter contact-icon" aria-hidden="true"></i>
-                          </a>
-                          <a href="https://github.com/5xruby" rel="noopener noreferrer" target="_blank">
-                            <i className="fab fa-github contact-icon" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-8 col-lg-9 mt-3">
-                      <div className="contact-mail-address">
-                        <p>有任何問題？</p>
-                        <p><a href="mailto:hi@5xruby.tw">hi@5xruby.tw</a></p>
-                        <p>地址：<a href="https://goo.gl/lz5v93" rel="noopener noreferrer" target="_blank" >10046 台北市中正區衡陽路 7 號 5 樓</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 mt-5">
-                <div className="text-center">
-                  <p>
-                    &copy; 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD)
-                    <br />
-                    台北市短期補習班立案 第 7594 號
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
 
       </div>
     )

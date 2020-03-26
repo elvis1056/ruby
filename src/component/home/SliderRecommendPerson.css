@@ -1,0 +1,86 @@
+.recommend-person-container {
+  overflow: hidden;
+  width: 100%;
+  /* margin: auto; */
+  position: relative;
+}
+
+.recommend-person-container > ul {
+  height: 200px;
+  /* overflow: hidden; */
+  position: relative;
+  left: 0;
+  /* transition: left 1s; */
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.recommend-person-container .slider-item {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-container .slider-item > img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.slider-item {
+  white-space: normal;
+}
+
+.slider-dots-recommend-person-wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.slider-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #ccc;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.recommend-person-img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.text-red {
+  color: #d90845;
+}
+
+.text-grey {
+  color: #888;
+}
+
+.text-fontsize-150 {
+  font-size: 150%;
+}
+
+@media (min-width: 1200px) {
+  .statement {
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .statement {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend-person-img {
+    width: 80px;
+  }
+  .statement {
+    margin-left: 10px;
+  }
+}

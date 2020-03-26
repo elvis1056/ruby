@@ -1,0 +1,31 @@
+.light-red-background {
+  background-color: #d90845;
+}
+
+.breadcrumb > a:hover {
+  text-decoration: none;
+}
+
+.cantact-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cantactus:before {
+  content: '>';
+}
+
+.cantacttext > h3 {
+  height: 1px;
+}
+
+.cantact-question:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  left: 50%;
+  background-color: #fff;
+  margin: 0 0 0 -40px;
+}
