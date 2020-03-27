@@ -8,7 +8,6 @@ class SliderdotRecommendPerson extends Component {
   }
 
   render() {
-    console.log(this.props)
     let dotArray = []
     let { imgLength } = this.props
     for (let i = 0; i<imgLength; i++) {

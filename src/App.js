@@ -11,16 +11,16 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 class App extends Component {
   render () {
     return (
-      <Router>
-        <div className="App">
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/contacts" exact component={Contacts} />
-        </Switch> 
-        <Footer />
-        </div>
-      </Router>
+      <div className="App">
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/contacts" component={Contacts} />
+          </Switch> 
+          <Footer />
+        </Router>
+      </div>
     )
   }
 }
