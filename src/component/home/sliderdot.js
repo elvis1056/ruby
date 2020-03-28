@@ -1,27 +1,35 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 class SliderDot extends Component {
-
-  handleSliderDotClick = (i,e) => {
-    let option = i - this.props.nowLocal;
-    this.props.turn(option);
+  handleSliderDotClick = (i) => {
+    const { nowLocal, turn } = this.props;
+    const option = i - nowLocal;
+    turn(option);
   }
 
   render() {
-    let dotArray = []
-    let { imgLength } = this.props
-    for (let i = 0; i<imgLength; i++) {
+    const dotArray = [];
+    const { imgLength } = this.props;
+    for (let i = 0; i < imgLength; i += 1) {
       dotArray[i] = (
-        <span key={i} className="slider-dot" onClick={(e)=>this.handleSliderDotClick(i,e)}></span>
-      )
+        /* eslint-disable-next-line */
+        <span key={i} className="slider-dot" onClick={(e) => this.handleSliderDotClick(i, e)} />
+      );
     }
 
     return (
       <div className="slider-dots-wrap">
         {dotArray}
       </div>
-    )
+    );
   }
 }
+
+SliderDot.propTypes = {
+  nowLocal: propTypes.number.isRequired,
+  turn: propTypes.func.isRequired,
+  imgLength: propTypes.number.isRequired,
+};
 
 export default SliderDot;

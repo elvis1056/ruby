@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 import banner1 from './picture/banner/banner1.jpg';
 import banner2 from './picture/banner/banner2.jpg';
 import banner3 from './picture/banner/banner3.jpg';
@@ -8,81 +9,98 @@ import SliderDot from './sliderdot';
 
 class Slider extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       imgs: [banner1, banner2, banner3, banner4],
       nowLocal: 0,
-    }
-  }
-
-  turn = (n) => {
-    var _n = this.state.nowLocal + n;
-    if(_n < 0) {
-      _n = _n + 4;
-    }
-    if(_n >= 4) {
-      _n = _n - 4;
-    }
-    this.setState({nowLocal: _n});
-  }
-
-  autoplay = () => {
-    this.autoPlayFlag = setInterval(()=>{
-      this.turn(1)
-    },this.props.delay)
-  }
-
-  pausePlay = () => {
-    clearInterval(this.autoPlayFlag)
+    };
   }
 
   componentDidMount() {
-    this.autoplay()
+    this.autoplay();
+  }
+
+  turn = (n) => {
+    const { nowLocal } = this.state;
+    let newnowLocal = nowLocal + n;
+    if (newnowLocal < 0) {
+      newnowLocal += 4;
+    }
+    if (newnowLocal >= 4) {
+      newnowLocal -= 4;
+    }
+    this.setState({ nowLocal: newnowLocal });
+  }
+
+  autoplay = () => {
+    const { delay } = this.props;
+
+    this.autoPlayFlag = setInterval(() => {
+      this.turn(1);
+    }, delay);
+  }
+
+  pausePlay = () => {
+    clearInterval(this.autoPlayFlag);
   }
 
   render() {
-    let { nowLocal, imgs } = this.state
+    const { nowLocal, imgs } = this.state;
+    const { speed } = this.props;
 
-    let sliderstyle = { 
-      "width": "100%",
-      left: -100 * this.state.nowLocal + "%",
-      transitionDuration: this.props.speed + "s",
-    }
+    const sliderstyle = {
+      width: '100%',
+      left: `${-100 * nowLocal}%`,
+      transitionDuration: `${speed}s`,
+    };
 
     return (
-      <div className="carousel-container" onMouseOver={this.pausePlay} onMouseOut={this.autoplay} >
+      <div className="carousel-container" onMouseOver={this.pausePlay} onFocus={this.pausePlay} onMouseOut={this.autoplay} onBlur={this.autoplay}>
         <ul style={sliderstyle}>
           <li className="slider-item">
-            <img 
-              src={banner1} alt="" />
+            <img
+              src={banner1}
+              alt=""
+            />
           </li>
           <li className="slider-item">
-            <img 
-              src={banner2} alt="" />
+            <img
+              src={banner2}
+              alt=""
+            />
           </li>
           <li className="slider-item">
-            <img 
-              src={banner3} alt="" />
+            <img
+              src={banner3}
+              alt=""
+            />
           </li>
           <li className="slider-item">
-            <img 
-              src={banner4} alt="" />
+            <img
+              src={banner4}
+              alt=""
+            />
           </li>
         </ul>
         <SliderDot nowLocal={nowLocal} imgLength={imgs.length} turn={this.turn} />
       </div>
-    )
+    );
   }
 }
+
+Slider.propTypes = {
+  delay: propTypes.number,
+  speed: propTypes.number,
+};
 
 Slider.defaultProps = {
   speed: 1,
   delay: 5000,
-  pause: true,
-  autoplay: true,
-  dots: true,
-  arrows: true,
-  items: [],
+  // pause: true,
+  // autoplay: true,
+  // dots: true,
+  // arrows: true,
+  // items: [],
 };
 Slider.autoPlayFlag = null;
 
