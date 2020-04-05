@@ -35,6 +35,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack --mode production",
+    "test": "test --passWithNoTests",
     "dev": "webpack-dev-server --mode development",
     "lint": "eslint --fix src"
   },
